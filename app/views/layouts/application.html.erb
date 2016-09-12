@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<meta name="description" content="Networking, database, aws, amazon services in Chicago Midwest area">
+	<meta name="author" content="APN is owned and operated by Jeffrey Hulford. Design and programming done by Matt McCullar and http://tempestwebdesign.com">
+
+    <title><%= full_title(yield(:title)) %></title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= render 'layouts/shim' %>
+
+  </head>
+
+  <%= favicon_link_tag 'apnicon.ico' %>
+
+  <body>
+  <%= render 'layouts/header' %>
+  	<div class="container">
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+    </div>
+  </body>
+</html>
