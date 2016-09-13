@@ -7,9 +7,10 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'sqlite3'
 # Use bootstrap 
 gem 'bootstrap-sass', '3.3.6'
-gem 'owlcarousel-rails'
-# Use elm with rails
-#gem 'elm-rails'
+gem 'font-awesome-sass', '~> 4.6.2'
+#mail form for contact pages
+gem 'mail_form'
+gem 'simple_form'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

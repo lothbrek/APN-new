@@ -27,6 +27,7 @@ Rails.application.configure do
   end
 
   # Don't care if the mailer can't send.
+  # Change to true - Do care if mailer can send.
   config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false

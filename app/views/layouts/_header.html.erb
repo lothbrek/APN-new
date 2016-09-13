@@ -12,9 +12,10 @@
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/">Home</a></li>
-        <li><a href="/pages#about">About</a></li>
-        <li><a href="#about">Blog</a></li>
-        <li><a href="#about">Contact</a></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Blog", '#' %></li>
+        <li><%= link_to "Contact Us", contact_path %></li>
+        <li><a href="https://www.linkedin.com/in/jeffhulford/"><i class="fa fa-linkedin-square"></i></a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">Admin Login</a></li>
@@ -23,55 +24,10 @@
   </div>
 </div>
 
-<div class="wide">
-  	<div class="col-xs-5 line"><hr></div>
-    <div class="col-xs-2 logo">All Purpose Networking  </div>
-    <div class="col-xs-5 line"><hr></div>
-</div>
-
-<div class="container-fluid">
-<br>
-<div id="la" class="owl-carousel itemsScaleUp-false owl-theme">
-  
-  <div class="item"> <%= image_tag("digital-marketing.png")
-%>  
-</div>
 
 
 </div>
-
 </div>
-</div>
-</div>
-<script>
-$(document).ready(function() {
- 
-  $("#la").owlCarousel({
- 
-      navigation : true, // Show next and prev buttons
-      slideSpeed : 600,
-      paginationSpeed : 600,
-      singleItem:true,
-      autoPlay: 3200,
-      responsiveRefreshRate: 30,
-      lazyLoad: true
- 
-      // "singleItem:true" is a shortcut for:
-      // items : 1, 
-      // itemsDesktop : false,
-      // itemsDesktopSmall : false,
-      // itemsTablet: false,
-      // itemsMobile : false
- 
-  });
-
-  $(".itemsScaleUp-false").owlCarousel({
-    items: 1,
-    itemsScaleUp:false
-  });
- 
-});
-</script>
 
 </header>
 
